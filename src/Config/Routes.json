@@ -1,0 +1,35 @@
+{
+  "home": {
+    "get": {
+      "controller": "home", "function": "main", "isCached": false
+    }
+  },
+  "harbim/liste": {
+    "get": {
+      "controller": "home", "function": "main", "isCached": false
+    }
+  },
+  "person/index":{
+    "get":{
+      "controller":"person", "function":"index", "isCached":false
+    }
+  },
+  "login":{
+    "get":{
+      "controller": "login", "function": "checkLogin","isCached": false
+    },
+    "post":{
+      "controller": "login", "function": "checkLoginPost"
+    }
+  },
+  "list":{
+    "get":{
+      "controller":"person", "function":"list"
+    }
+  },
+  "<<URL>>":{
+    "<<HTTP_VERB>>":{
+      "controller":"<<js_Filename>>", "function":"<<Run Method>>"
+    }
+  }
+}
